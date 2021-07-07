@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Landing page</title>
+   <link rel="stylesheet" href="landing.css" />
+
+</head>
+
+<body>
+
+   <div class="container">
+      <div class="left">
+         <h1>facebook</h1>
+         <p>Facebook helps you connect and share with the people in your life.</p>
+      </div>
+      <div class="right">
+         <form action="">
+            <input type="text" placeholder="Email addess or phone number">
+            <input type="password" placeholder="Password">
+            <a href="" class="loginBtn">Log In</a>
+            <a href="" class="forget">Forgotten password?</a>
+            <div class="sign-up">
+               <button id="sUpBtn" class="signupBtn">Create New Account
+               </button>
+            </div>
+         </form>
+         <p><b>Create a Page</b> for a celebrity, band or business.</p>
+      </div>
+
+      <div id="myModal" class="modal">
+         <div class="modal-content">
+           <span id="close">&times;</span>
+           <p>Some text in the Modal..</p>
+         </div>
+      </div>
+   </div>
+
+<script>
+   var modal = document.getElementById("myModal");
+   var signUpBtn = document.getElementById("sUpBtn");
+   var closeModal = document.getElementById("close");
+
+   signUpBtn.onclick  = function (){
+      modal.style.display = "block";
+   }
+   
+   closeModal.onclick = function(){
+      modal.style.display = "none";
+   }
+</script>
+</body>
+
+</html>
